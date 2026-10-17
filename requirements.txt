@@ -1,0 +1,3 @@
+mcp-sinim==0.3.0
+pandas
+jupyter

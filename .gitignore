@@ -1,0 +1,28 @@
+# Datos (se regeneran corriendo los notebooks)
+data/
+*.csv
+*.parquet
+*.nc
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled.ipynb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Credenciales
+.cdsapirc
+*.key
+
+# Respaldos temporales
+*.pkl
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
