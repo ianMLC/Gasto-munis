@@ -43,3 +43,9 @@ Gasto-munis/
 - `pct_poblacion_rural` no tiene datos para 2015-2017 en SINIM.
 - `viviendas` no tiene datos para 2015-2021 en SINIM.
 - Ambas variables provienen probablemente de datos censales. No se imputaron valores.
+
+
+4. Ejecutar notebooks
+```bash
+   01 para descargar y procesar infromacion base
+```

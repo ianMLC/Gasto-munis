@@ -54,6 +54,17 @@ def a_ancho(df: pd.DataFrame) -> pd.DataFrame:
         columns="variable",
         values="value",
         aggfunc="first",
+        dropna=False
     )
     ancho.columns.name = None
     return ancho.reset_index() 
+
+def procesar(forzar: bool = False) -> pd.DataFrame:
+    """Descarga todo, arma los paneles y los guarda en data/processed/."""
+    largo = descargar_todo(forzar=forzar)
+    ancho = a_ancho(largo)
+
+    DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
+    largo.to_parquet(DATA_PROCESSED / "panel_largo.parquet", index=False)
+    ancho.to_parquet(DATA_PROCESSED / "panel_ancho.parquet", index=False)
+    return ancho

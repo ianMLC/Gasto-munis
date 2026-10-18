@@ -1,3 +1,5 @@
 mcp-sinim==0.3.0
 pandas
+pyarrow
+matplotlib
 jupyter
